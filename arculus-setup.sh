@@ -7,6 +7,8 @@ sudo chmod +x setup_controller.sh
 echo "Running initial setup script..."
 ./setup_controller.sh
 
+kubectl apply -f default-deny.yaml
+
 echo "Enter database password:"
 read db_password
 sed -i "s/MYSQL_ROOT_PASSWORD vimanlab/MYSQL_ROOT_PASSWORD $db_password/" arculus-gcs-mysql/Dockerfile
