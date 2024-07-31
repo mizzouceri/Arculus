@@ -6,7 +6,7 @@ The Mission APIs are used for the web simulation of various phases of a mission 
 
 **Method**: GET
 
-**URL**: http://<serverIP>:3001/mission/getMissionsByCreatorId?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5MzMxNzYsImV4cCI6MTcxODkzNjc3Nn0.MMGXVLY9-F7zACJc_70L5IQeAjKzcxb2my2_4X_AxEM
+**URL**: http://serverIP:3001/mission/getMissionsByCreatorId?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5MzMxNzYsImV4cCI6MTcxODkzNjc3Nn0.MMGXVLY9-F7zACJc_70L5IQeAjKzcxb2my2_4X_AxEM
 
 **Description**: This API fetches the list of all missions created by a certain Mission Creator user by fetching his/her user ID.
 
@@ -73,7 +73,7 @@ The Mission APIs are used for the web simulation of various phases of a mission 
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/mission/createMission
+**URL**: http://serverIP:3001/mission/createMission
 
 **Description**: This API authorizes if the user requesting is a Mission Creator and on success, it creates a new mission.
 
@@ -105,7 +105,7 @@ The Mission APIs are used for the web simulation of various phases of a mission 
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/mission/executeStealthyReconAndResupply
+**URL**: http://serverIP:3001/mission/executeStealthyReconAndResupply
 
 **Description**: This API is used to execute the Stealthy Reconnaissance and Resupply mission with the mission information.
 

@@ -6,7 +6,7 @@ The Authorization APIs handle the user creation, sign-in and session management 
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/auth/login
+**URL**: http://serverIP:3001/auth/login
 
 **Description**: The login API accepts the username and password of the user, verifies them, and issues an encrypted JWT token with a one-hour access session.
 
@@ -37,7 +37,7 @@ The Authorization APIs handle the user creation, sign-in and session management 
 
 **Method**: GET
 
-**URL**: http://<serverIP>:3001/auth/authorize?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
+**URL**: http://serverIP:3001/auth/authorize?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
 
 **Description**: The /authorize API checks the authorization token and returns the user type for the UI to render content based on the user role.
 
@@ -58,7 +58,7 @@ The Authorization APIs handle the user creation, sign-in and session management 
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/auth/signup
+**URL**: http://serverIP:3001/auth/signup
 
 **Description**: The /signup API accepts new user information, verifies there is no duplication of user information, creates the new user, and returns success/failure status.
 
@@ -94,7 +94,7 @@ The Authorization APIs handle the user creation, sign-in and session management 
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/auth/sendEmailForAuth
+**URL**: http://serverIP:3001/auth/sendEmailForAuth
 
 **Description**: The /sendEmailForAuth API sends an authentication e-mail to the user's address with a one-time password (OTP).
 
@@ -120,7 +120,7 @@ The Authorization APIs handle the user creation, sign-in and session management 
 
 **Method**: PUT
 
-**URL**: http://<serverIP>:3001/auth/setZtMode?mode=no_zt
+**URL**: http://serverIP:3001/auth/setZtMode?mode=no_zt
 
 **Description**: The /setZtMode API changes the Zero Trust mode used by the backend based on the dropdown option chosen by the user.
 
@@ -149,7 +149,7 @@ The Authorization APIs handle the user creation, sign-in and session management 
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/auth/verifyOtp
+**URL**: http://serverIP:3001/auth/verifyOtp
 
 **Description**: The /verifyOtp API checks the input OTP and verifies it against the issues code. It returns a failure status if the OTP is incorrect.
 

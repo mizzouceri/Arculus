@@ -6,7 +6,7 @@ The User APIs handle the user management functionalities like updating, deleting
 
 **Method**: DELETE
 
-**URL**: http://<serverIP>:3001/user/deleteUser?username=newuser&authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
+**URL**: http://serverIP:3001/user/deleteUser?username=newuser&authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
 
 **Description**: The /deleteUser API can be used by authorized Mission Creator users to delete other users.
 
@@ -27,7 +27,7 @@ The User APIs handle the user management functionalities like updating, deleting
 
 **Method**: GET
 
-**URL**: http://<serverIP>:3001/user/getUsers?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
+**URL**: http://serverIP:3001/user/getUsers?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
 
 **Description**: The /getUsers API fetches all the users in Arculus accepting a valid Mission Creator user.
 
@@ -81,7 +81,7 @@ The User APIs handle the user management functionalities like updating, deleting
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/user/updateUser
+**URL**: http://serverIP:3001/user/updateUser
 
 **Description**: The /updateUser API is used to edit user information and configuration by an authorized Mission Creator user.
 
@@ -119,7 +119,7 @@ The User APIs handle the user management functionalities like updating, deleting
 
 **Method**: GET
 
-**URL**: http://<serverIP>:3001/user/getCurrentUser?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
+**URL**: http://serverIP:3001/user/getCurrentUser?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
 
 **Description**: This API fetches the information of the current user using his/her authorization token.
 

@@ -6,7 +6,7 @@ The utilization API is used to fetch the CPU and memory utilization on the Arcul
 
 **Method**: GET
 
-**URL**: http://<serverIP>:3001/utilization/getUtilizationData
+**URL**: http://serverIP:3001/utilization/getUtilizationData
 
 **Description**: The utilization API is used to fetch the CPU and memory utilization on the Arculus server for monitoring purposes.
 

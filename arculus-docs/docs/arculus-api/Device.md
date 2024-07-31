@@ -5,7 +5,7 @@ The Device APIs are used to add devices to the Arculus cluster, configure and de
 
 **Method**: GET
 
-**URL**: http://<serverIP>:3001/device/getTrustedDevices?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
+**URL**: http://serverIP:3001/device/getTrustedDevices?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
 
 **Description**: This API fetches the list of devices configured with K3s pods when provided with an authorized Mission Creator user.
 
@@ -116,7 +116,7 @@ The Device APIs are used to add devices to the Arculus cluster, configure and de
 
 **Method**: GET
 
-**URL**: http://<serverIP>:3001/device/getMoreNodes?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
+**URL**: http://serverIP:3001/device/getMoreNodes?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug
 
 **Description**: This API fetches devices in the cluster that aren't configured with functions and K3s pods.
 
@@ -139,7 +139,7 @@ The Device APIs are used to add devices to the Arculus cluster, configure and de
 
 **Method**: DELETE
 
-**URL**: http://<serverIP>:3001/device/removeTrustedDevice?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug&deviceName=controller
+**URL**: http://serverIP:3001/device/removeTrustedDevice?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5Mjk1MzAsImV4cCI6MTcxODkzMzEzMH0.3l8GFdBJyng8CZ8GU7nBS-d4BJ1JiTyuZ9WEWp1Cgug&deviceName=controller
 
 **Description**: This API accepts an authorization token and device name, and deletes the device on the user being an authorized Mission Creator.
 
@@ -160,7 +160,7 @@ The Device APIs are used to add devices to the Arculus cluster, configure and de
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/device/addTrustedDevice
+**URL**: http://serverIP:3001/device/addTrustedDevice
 
 **Description**: This API is used to configure a node with virtualized functionality for a specific device type and its allowed functions.
 
@@ -204,7 +204,7 @@ The Device APIs are used to add devices to the Arculus cluster, configure and de
 
 **Method**: PUT
 
-**URL**: http://<serverIP>:3001/device/updateTrustedDevice
+**URL**: http://serverIP:3001/device/updateTrustedDevice
 
 **Description**: This API updates the allowed functions for a configured device.
 
@@ -246,7 +246,7 @@ The Device APIs are used to add devices to the Arculus cluster, configure and de
 
 **Method**: POST
 
-**URL**: http://<serverIP>:3001/device/addToCluster
+**URL**: http://serverIP:3001/device/addToCluster
 
 **Description**: This API adds a device to the Arculus cluster when an authorized user accepts a join cluster request.
 
@@ -276,7 +276,7 @@ The Device APIs are used to add devices to the Arculus cluster, configure and de
 
 **Method**: DELETE
 
-**URL**: http://<serverIP>:3001/device/removeFromCluster
+**URL**: http://serverIP:3001/device/removeFromCluster
 
 **Description**: This API removes devices from the K3s cluster when an authorized user removes it using the "Remove from cluster" button.
 
