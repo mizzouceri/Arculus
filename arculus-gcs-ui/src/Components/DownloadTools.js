@@ -16,7 +16,7 @@ function DownloadTools() {
     const [nodeName, setNodeName] = useState('');
 
     const handleNodeNameChange = (event) => {
-        const updatedNodeName = event.target.value || '';
+        const updatedNodeName = event.target.value.replace(/[^a-zA-Z0-9]/g, '');        
         setNodeName(updatedNodeName);
         setTextToCopy(generateDownloadScript(updatedNodeName));
     };
