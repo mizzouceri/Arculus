@@ -1,5 +1,5 @@
 {
-    "url": "https://<honeypot domain>",
+    "url": "http://<honeypot domain>",
     "deployKey": "0bKeXjBW",
     "honeyNetDomain": "<honeypot domain>",
     "username": "admin@localhost",
