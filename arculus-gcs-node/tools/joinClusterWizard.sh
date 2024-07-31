@@ -87,8 +87,12 @@ if [ "$http_status_code" -eq 200 ]; then
 
     curl -sfL "https://get.k3s.io" | sh -s -
 
-    sudo apt install -y python3 python3-pip docker-compose
-    pip3 install Flask
+    sudo apt install -y python3 python3-pip python3-flask
+    
+    sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose
+    sudo systemctl restart docker
+
     export CHN_DOMAIN=$clusterIP
     
     nohup python3 honeypotWiz.py "$CHN_DOMAIN" "$privateIP" > api.log 2>&1 &
