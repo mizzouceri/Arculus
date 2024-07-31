@@ -6,7 +6,7 @@ The Policy APIs are used to create network policies between devices to control t
 
 **Method**: GET
 
-**URL**: http://{serverIP}:3001/policy/getNetworkPolicies?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5MzMxNzYsImV4cCI6MTcxODkzNjc3Nn0.MMGXVLY9-F7zACJc_70L5IQeAjKzcxb2my2_4X_AxEM
+**URL**: http://<serverIP>:3001/policy/getNetworkPolicies?authToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFyY3VsdXMiLCJwYXNzd29yZCI6IkJ1cm5pdGUuMjQiLCJpYXQiOjE3MTg5MzMxNzYsImV4cCI6MTcxODkzNjc3Nn0.MMGXVLY9-F7zACJc_70L5IQeAjKzcxb2my2_4X_AxEM
 
 **Description**: The /getNetworkPolicies API fetches all the network policies among devices when an authorized user requests it.
 
@@ -83,7 +83,7 @@ The Policy APIs are used to create network policies between devices to control t
 
 **Method**: POST
 
-**URL**: http://{serverIP}:3001/policy/addNetworkPolicy
+**URL**: http://<serverIP>:3001/policy/addNetworkPolicy
 
 **Description**: This API is used to create a new network policy with ingress and egress rules for a device.
 
@@ -130,7 +130,7 @@ The Policy APIs are used to create network policies between devices to control t
 
 **Method**: DELETE
 
-**URL**: http://{serverIP}:3001/policy/deleteNetworkPolicy
+**URL**: http://<serverIP>:3001/policy/deleteNetworkPolicy
 
 **Description**: This API is used to delete an existing network policy.
 
