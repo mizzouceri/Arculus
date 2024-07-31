@@ -40,7 +40,7 @@ echo "Enter CHN Server URL (leave blank if not available):"
 read chn_url
 if [[ ! -z "$chn_url" ]]; then
   sed -i "s|https://<chn domain>|$chn_url|" arculus-gcs-ui/src/config.js
-  sed -i "s|https://<honeypot domain>|$chn_url|" arculus-gcs-node/configs/honeypot_config.json
+  sed -i "s|<honeypot domain>|$chn_url|" arculus-gcs-node/configs/honeypot_config.json
 fi
 
 echo "Enter CHN API key (leave blank if not available):"
