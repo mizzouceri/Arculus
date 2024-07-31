@@ -134,21 +134,22 @@ exports.signup = (req, res) => {
 
     // Check for a valid JWT token
     if (jwtToken) {
-        verifyToken(jwtToken, (err, decoded) => {
-            if (err) {
-                console.error('Token verification failed:', err);
-                checkForEmptyDatabaseAndCreateUser();
-            } else {
-                isUserOfType(decoded.userId, ['Mission Creator'], (roleErr, isAdmin) => {
-                    if (roleErr || !isAdmin) {
-                        console.error(roleErr);
-                        return res.status(403).json({ message: 'Unauthorized: Only users with admin role can perform this action' });
-                    }
-
-                    fetchRoleIdAndCreateUser(role);
-                });
-            }
-        });
+        // Decode the JWT token without verifying
+        const decoded = jwt.decode(jwtToken);
+        
+        if (!decoded) {
+            console.error('Token decoding failed');
+            checkForEmptyDatabaseAndCreateUser();
+        } else {
+            isUserOfType(decoded.username, ['Mission Creator'], (roleErr, isAdmin) => {
+                if (roleErr || !isAdmin) {
+                    console.error(roleErr);
+                    return res.status(403).json({ message: 'Unauthorized: Only users with admin role can perform this action' });
+                }
+    
+                fetchRoleIdAndCreateUser(role);
+            });
+        }
     } else {
         checkForEmptyDatabaseAndCreateUser();
     }
