@@ -87,7 +87,7 @@ if [ "$http_status_code" -eq 200 ]; then
 
     curl -sfL "https://get.k3s.io" | sh -s -
 
-    sudo apt install -y python3 python3-pip python3-flask
+    sudo apt install -y python3 python3-pip python3-flask docker.io
     
     sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
