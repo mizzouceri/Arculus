@@ -22,6 +22,11 @@ function MetricsDashboard() {
     window.open(CHN_URL, '_blank');
   };
 
+  const handleWazuhNavigate = () => {
+    const dashboard = 'https://localhost:8443/app/dashboards#/view/7c6251e0-abc5-11ef-a190-dd03e59100be';
+    window.open(dashboard, '_blank');
+  }
+
   return (
     <div className="metricsDashboard">
       <Typography variant="h4" component="div" gutterBottom>
@@ -60,6 +65,9 @@ function MetricsDashboard() {
       <div className="footer-text">
         <Typography variant="body1" component="div" gutterBottom>
           For more detailed insights, visit our <Button color="primary" onClick={handleNavigate}>Complete CHN Server Dashboard<OpenInNewIcon fontSize="small" /></Button>
+        </Typography>
+        <Typography variant="body1" component="div" gutterBottom>
+          For more detailed insights, visit our <Button color="primary" onClick={handleWazuhNavigate}>Complete WAZUH Metrics Dashboard<OpenInNewIcon fontSize="small" /></Button>
         </Typography>
       </div>
       <br />

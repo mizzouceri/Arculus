@@ -65,7 +65,7 @@ cd arculus-gcs-node
 npm install
 npm audit fix  # Optionally run audit fix
 echo "Starting Node.js application with PM2..."
-pm2 start index.js --name node-app
+pm2 start index.js --name node-app --watch
 cd ..
 
 echo "Setting up UI server..."
@@ -74,7 +74,7 @@ npm install
 echo "Building UI..."
 npm run build  # Builds the React application
 echo "Starting UI server with PM2..."
-pm2 start server.js --name ui-server
+pm2 start server.js --name ui-server --watch
 cd ..
 
 echo "Arculus successfully setup! Access the Arculus UI at http://${public_ip}:3000"

@@ -31,6 +31,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import CircularProgress from '@mui/material/CircularProgress';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'; // Icon for external site
 
 const getTasks = async () => {
   try {
@@ -353,6 +354,12 @@ function DeviceManagement(props) {
     }
   };
 
+  const handleZitiNavigate = () => {
+    const dashboard = "https://ec2-44-204-250-56.compute-1.amazonaws.com:8441/zac/login";
+    //const options = "width=800,height=600,scrollbars=yes,resizable=yes";
+    window.open(dashboard, "_blank");
+  };
+
   const handleEditDeviceModalClose = () => {
     setIsEditDeviceModalOpen(false);
     setEditDeviceDetails(null);
@@ -428,6 +435,12 @@ function DeviceManagement(props) {
                 <span>{key}</span>
               </div>
             ))}
+          </div>
+          <div className="bottom-left">
+            <h2>Manage Devices in the Cluster</h2>
+            <div className="button-container">
+              <button class="rectangle-button" onClick={handleZitiNavigate}>OpenZiti Dashboard<OpenInNewIcon fontSize="medium" /></button>
+            </div>
           </div>
         </div>
         <div className="right">
